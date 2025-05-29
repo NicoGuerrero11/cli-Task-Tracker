@@ -119,9 +119,9 @@ def delete_task(argv):
 
     if len(tasks) < original_len:
         save_task(tasks)
-        print(f"🗑️ Tarea con ID {id} eliminada.")
+        print(f"Task with ID {id} deleted.")
     else:
-        print("No se encontró ninguna tarea con ese ID.")
+        print("ID not found.")
 
 # Update task status by ID
 def update_status(argv):
