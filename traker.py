@@ -51,7 +51,7 @@ def new_id(tasks):
 def add_task(argv):
     description = " ".join(argv[2:])
     if not description:
-        print("❌ No description provided.")
+        print("No description provided.")
         return
     tasks = load_tasks()
     id = new_id(tasks)
@@ -72,16 +72,16 @@ def add_task(argv):
 # Update task description by ID
 def update_task(argv):
     if len(argv) < 3:
-        print("❌ You must add an ID")
+        print("You must add an ID")
         return
     try:
         id = int(argv[2])
     except ValueError:
-        print("❌ Invalid ID format")
+        print("Invalid ID format")
 
     description = " ".join(argv[3:])
     if not description:
-        print("❌ No description provided.")
+        print("No description provided.")
         return
 
     tasks = load_tasks()
@@ -96,7 +96,7 @@ def update_task(argv):
         
     if found:
         save_task(tasks)
-        print(f"✅ Task with ID {id} updated.")
+        print(f"Task with ID {id} updated.")
     else:
         print("ID not found")
 
@@ -104,12 +104,12 @@ def update_task(argv):
 # Delete task by ID
 def delete_task(argv):
     if len(argv) < 3:
-        print("❌ You must add an ID")
+        print("You must add an ID")
         return
     try:
         id = int(argv[2])
     except ValueError:
-        print("❌ Invalid ID format")
+        print("Invalid ID format")
     
     tasks = load_tasks()
     original_len = len(tasks)
@@ -121,22 +121,22 @@ def delete_task(argv):
         save_task(tasks)
         print(f"🗑️ Tarea con ID {id} eliminada.")
     else:
-        print("❌ No se encontró ninguna tarea con ese ID.")
+        print("No se encontró ninguna tarea con ese ID.")
 
 # Update task status by ID
 def update_status(argv):
     if len(argv) < 3:
-        print("❌ You must add an ID")
+        print("You must add an ID")
         return
     try:
         id = int(argv[2])
     except ValueError:
-        print("❌ Invalid ID format")
+        print("Invalid ID format")
     
     tasks = load_tasks()
     found = False
     if argv[1] not in VALID_STATUSES:
-        print("❌ Invalid status")
+        print("Invalid status")
         return
 
     for task in tasks:
@@ -148,7 +148,7 @@ def update_status(argv):
         
     if found:
         save_task(tasks)
-        print(f"✅ Status of task ID {id} updated.")
+        print(f"Status of task ID {id} updated.")
     else:
         print("ID not found")
 
