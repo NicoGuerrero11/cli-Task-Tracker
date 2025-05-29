@@ -1,6 +1,9 @@
 
 
+
 # 📝 Task Tracker CLI
+
+**Project URL:** [https://github.com/NicoGuerrero11/cli-Task-Tracker](https://github.com/NicoGuerrero11/cli-Task-Tracker)
 
 A command-line interface (CLI) application to manage tasks using Python. Tasks are stored locally in a JSON file. This tool supports adding, listing, updating, deleting, and filtering tasks by their status.
 
