@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "description": "run 20 km today",
+        "status": "todo",
+        "createdAt": "2025-05-29T14:36:25.368176",
+        "updatedAt": "2025-05-29T15:12:33.566429"
+    },
+    {
+        "id": 3,
+        "description": "coding 2 hours",
+        "status": "todo",
+        "createdAt": "2025-05-29T14:37:14.685513",
+        "updatedAt": "2025-05-29T14:37:14.685513"
+    },
+    {
+        "id": 4,
+        "description": "studying python",
+        "status": "done",
+        "createdAt": "2025-05-29T14:38:25.020603",
+        "updatedAt": "2025-05-29T15:32:15.831395"
+    },
+    {
+        "id": 5,
+        "description": "watch soccer game",
+        "status": "in-progress",
+        "createdAt": "2025-05-29T14:39:03.678434",
+        "updatedAt": "2025-05-29T15:32:37.758796"
+    }
+]
